@@ -1,0 +1,30 @@
+{
+  "name": "webstorage-redis",
+  "version": "0.0.0",
+  "description": "A webstorage plugin for persistent redis storeage",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 4000",
+    "lint": "jshint index.js test"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0",
+    "webstorage": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tatsuyaoiw/webstorage-redis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tatsuyaoiw/webstorage-redis/issues"
+  },
+  "homepage": "https://github.com/tatsuyaoiw/webstorage-redis",
+  "keywords": [
+    "webstorage",
+    "localstorage",
+    "redis"
+  ],
+  "author": "Tatsuya Oiwa <tatsuyaoiw@gmail.com>",
+  "license": "MIT"
+}
