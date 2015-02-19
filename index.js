@@ -7,13 +7,14 @@ var redis = require('redis');
  *
  * @constructor
  */
-function RedisStorage(options) {
+function RedisStorage() {
   if (!(this instanceof RedisStorage)) {
-    return new RedisStorage(options);
+    return new RedisStorage(arguments);
   }
-  this.client = redis.createClient.apply(this, arguments);
+  var args = Array.prototype.slice.call(arguments, 0);
+  this.client = redis.createClient.apply(redis, args);
 
-  client.on('error', function (err) {
+  this.client.on('error', function (err) {
     console.log(err.message);
   });
 }
@@ -24,6 +25,7 @@ function RedisStorage(options) {
  * @return {String[]} keys
  */
 RedisStorage.prototype.keys = function() {
+  return [];
 };
 
 /**

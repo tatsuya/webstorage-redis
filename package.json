@@ -7,6 +7,9 @@
     "test": "mocha --reporter spec --timeout 4000",
     "lint": "jshint index.js test"
   },
+  "dependencies": {
+    "redis": "^0.12.1"
+  },
   "devDependencies": {
     "jshint": "^2.6.0",
     "mocha": "^2.1.0",
